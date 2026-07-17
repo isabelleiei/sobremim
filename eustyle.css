@@ -1,0 +1,203 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 242, 244);
+    color:black
+}
+
+.header {
+    background-color: rgb(244, 123, 153);
+    color: rgb(255, 240, 249);
+    padding: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+.nav-menu {
+    background-color: rgb(255, 171, 192);
+    list-style: none;
+    margin-top: 10px;
+    text-align: center;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 10px;
+
+}
+
+.nav-menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav.menu a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.imagem {
+    width: 470px;
+    background-color: rgb(251, 224, 228);
+    border: 1px solid rgb(255, 202, 210);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: rgb(176, 86, 107);
+    flex-shrink: 0;
+}
+
+.imagem:hover {
+    transform: scale(1.05);
+    border-color: rgb(255, 55, 85);
+}
+
+.dados {
+    background-color: rgb(255, 171, 192);
+    color: rgb(255, 255, 255);
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+    margin: 35px;
+}
+
+.info {
+    background-color: rgb(255, 214, 224);
+    text-align: center;
+    padding: 35px;
+    margin: 200px;
+    border-radius: 10px;
+    margin: 35px;
+    width: 800px;
+    margin: 0 auto;
+}
+.contatos {
+    background-color: rgb(255, 214, 224);
+    text-align: center;
+    padding: 35px;
+    margin: 200px;
+    border-radius: 10px;
+    margin: 35px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.estudo {
+    background-color: rgb(255, 214, 224);
+    text-align: center;
+    padding: 35px;
+    margin: 200px;
+    border-radius: 10px;
+    margin: 35px;
+    width: 800px;
+    margin: 0 auto;
+}
+.estudo video {
+    width: 500px;
+}
+.quali {
+    background-color: rgb(255, 214, 224);
+    text-align: center;
+    padding: 35px;
+    margin: 200px;
+    border-radius: 10px;
+    margin: 35px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.like {
+    background-color: rgb(255, 214, 224);
+    text-align: center;
+    padding: 35px;
+    margin: 200px;
+    border-radius: 10px;
+    margin: 35px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.perfil {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.info-list {    
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+    gap: 20px;
+    padding: 0px;
+    justify-content: center;
+}
+
+.nome:hover {
+    transform: scale(1.05);
+    border-color: rgb(255, 55, 85);
+}
+
+.idade:hover {
+    transform: scale(1.05);
+    border-color: rgb(255, 55, 85);
+}
+
+.nasci:hover {
+    transform: scale(1.05);
+    border-color: rgb(255, 55, 85);
+}
+
+.nome:hover {
+    transform: scale(1.05);
+    border-color: rgb(255, 55, 85);
+}
+
+.info-list li {
+    width: 230px;
+    height: 90px;
+    background-color: rgb(251, 224, 228);
+    border: 1px solid rgb(255, 202, 210);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.info-list li span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info-list h5 {
+    color: rgb(176, 86, 107);
+
+.label {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.value {
+    display: block;
+}
+
