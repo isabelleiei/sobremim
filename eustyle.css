@@ -21,32 +21,46 @@ body {
     z-index: 1000;
     text-align: center;
 }
+
 .nav-menu {
     background-color: rgb(255, 171, 192);
-    list-style: none;
-    margin-top: 10px;
-    text-align: center;
-    padding: 25px;
-    margin: 25px;
+    padding: 20px;
     border-radius: 10px;
-
+    margin: 25px;
 }
 
 .nav-menu ul {
-    display: flex;
-    justify-content: center;
+    display: flex;              /* Deixa um ao lado do outro */
+    justify-content: center;    /* Centraliza */
+    align-items: center;
+    gap: 25px;                  /* Espaço entre os itens */
     list-style: none;
-    margin-top: 10px;
+    padding: 0;
+    margin: 0;
 }
 
-.nav-menu li {
-    margin: 0 15px;
-}
-
-.nav.menu a {
-    color: aliceblue;
+.nav-menu a {
     text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
+
+.nav-menu a:hover {
+    color: rgb(255, 240, 249);
+}
+
+.info p,
+.contatos p,
+.estudo p,
+.quali p,
+.like p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
 
 .imagem {
     width: 470px;
@@ -249,18 +263,15 @@ curiosidades
 /*==============================
 TEMA ESCURO
 ============================*/
-/* Fundo da página */
 .dark{
     background-color:rgb(53, 23, 30);
     color:white;
 }
 
-/* Cabeçalho */
 .dark .header{
     background:rgb(105, 20, 40);
 }
 
-/* Menu */
 .dark .nav-menu{
     background:rgba(223, 44, 86, 0.325);
 }
@@ -269,7 +280,6 @@ TEMA ESCURO
 background-color: rgba(105, 20, 40, 0.625);
 }
 
-/* Todas as caixas */
 .dark .imagem,
 .dark .info,
 .dark .contatos,
@@ -277,20 +287,18 @@ background-color: rgba(105, 20, 40, 0.625);
 .dark .quali,
 .dark .like,
 .dark .curiosidades,
-.dark .info-list li{
+.dark .info-list li,
+.dark #btnCurtir{
     background:rgb(116, 39, 59);
     color:white;
     border-color:rgb(106, 25, 45);
 }
 
 
-
-/* Títulos menores */
 .dark h5{
     color:#ffd6e0;
 }
 
-/* Links */
 .dark a{
     color:white;
 }
@@ -318,3 +326,25 @@ background-color: rgba(105, 20, 40, 0.625);
     background:#ffeaf0;
 }
 
+.curtidas{
+    text-align:center;
+    margin:30px;
+}
+
+#btnCurtir{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    background:rgb(255, 186, 203);
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+#btnCurtir:hover{
+    background:rgb(255, 220, 226);
+}
+
+#btnCurtir:active{
+    transform: scale(1.2);
+}

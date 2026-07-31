@@ -43,3 +43,22 @@ botaoCuriosidade.addEventListener("click", function () {
     texto.textContent = curiosidades[numero];
 
 });
+
+//curtidas
+const btnCurtir = document.getElementById("btnCurtir");
+const contador = document.getElementById("contador");
+
+let curtidas = localStorage.getItem("curtidas");
+
+if (curtidas === null) {
+    curtidas = 0;
+}
+
+contador.textContent = curtidas;
+
+btnCurtir.addEventListener("click", function () {
+    curtidas++;
+    contador.textContent = curtidas;
+    localStorage.setItem("curtidas", curtidas);
+});
+
