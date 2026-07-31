@@ -105,9 +105,7 @@ body {
     width: 800px;
     margin: 0 auto;
 }
-.estudo video {
-    width: 500px;
-}
+
 .quali {
     background-color: rgb(255, 214, 224);
     text-align: center;
@@ -164,7 +162,7 @@ body {
     border-color: rgb(255, 55, 85);
 }
 
-.nome:hover {
+.email:hover {
     transform: scale(1.05);
     border-color: rgb(255, 55, 85);
 }
@@ -189,6 +187,7 @@ body {
 
 .info-list h5 {
     color: rgb(176, 86, 107);
+}
 
 .label {
     display: block;
@@ -199,5 +198,123 @@ body {
 
 .value {
     display: block;
+}
+
+/*configuração tela*/
+@media (max-width: 1024px) {
+    body {
+        background-color: rgb(255, 242, 244);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: rgb(255, 242, 244);
+    }
+}
+
+/*======================
+curiosidades
+====================*/
+.curiosidades{
+    width:90%;
+    max-width:800px;
+    margin:40px auto;
+    text-align:center;
+    background:#ffd6e0;
+    padding:30px;
+    border-radius:10px;
+}
+
+#btnCuriosidade{
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#f47b99;
+    color:white;
+    font-size:16px;
+}
+
+#btnCuriosidade:hover{
+    background:#d85c7d;
+}
+
+#curiosidade{
+    margin-top:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/*==============================
+TEMA ESCURO
+============================*/
+/* Fundo da página */
+.dark{
+    background-color:rgb(53, 23, 30);
+    color:white;
+}
+
+/* Cabeçalho */
+.dark .header{
+    background:rgb(105, 20, 40);
+}
+
+/* Menu */
+.dark .nav-menu{
+    background:rgba(223, 44, 86, 0.325);
+}
+
+.dark .dados {
+background-color: rgba(105, 20, 40, 0.625);
+}
+
+/* Todas as caixas */
+.dark .imagem,
+.dark .info,
+.dark .contatos,
+.dark .estudo,
+.dark .quali,
+.dark .like,
+.dark .curiosidades,
+.dark .info-list li{
+    background:rgb(116, 39, 59);
+    color:white;
+    border-color:rgb(106, 25, 45);
+}
+
+
+
+/* Títulos menores */
+.dark h5{
+    color:#ffd6e0;
+}
+
+/* Links */
+.dark a{
+    color:white;
+}
+
+
+#tema{
+    position: center;
+    right:30px;
+    top: 25px;
+
+    padding:10px 15px;
+
+    border:none;
+    border-radius:8px;
+
+    cursor:pointer;
+
+    background:#ffdae4;
+    color:#333;
+
+    font-weight:bold;
+}
+
+#tema:hover{
+    background:#ffeaf0;
 }
 
